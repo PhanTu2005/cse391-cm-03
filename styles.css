@@ -1,0 +1,180 @@
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ===========================
+   TOKENS
+=========================== */
+
+:root {
+    --cm-primary: #0f766e;
+    --cm-bg: #f8fafc;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--cm-bg);
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.cm-header {
+    background: var(--cm-primary);
+    color: white;
+    padding: 1rem;
+}
+
+.cm-header h1 {
+    margin: 0;
+}
+
+.cm-header p {
+    margin-top: .5rem;
+}
+
+/* ===========================
+   NAV
+=========================== */
+
+.cm-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    background: var(--cm-primary);
+}
+
+.cm-nav li {
+    margin-bottom: .5rem;
+}
+
+.cm-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cm-nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.cm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.cm-table thead {
+    background: var(--cm-primary);
+    color: white;
+}
+
+.cm-table th,
+.cm-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.cm-table img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+.cm-table tbody tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.cm-table tbody tr:hover {
+    background: #ccfbf1;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 24rem;
+    padding: .5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--cm-primary);
+    outline-offset: 2px;
+}
+
+button {
+    background: var(--cm-primary);
+    color: white;
+    border: none;
+    padding: .6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #115e59;
+}
+
+/* ===========================
+   FIGURE
+=========================== */
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: .25rem;
+    font-size: .9rem;
+    color: #475569;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #e2e8f0;
+}
